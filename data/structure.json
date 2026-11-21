@@ -1,23 +1,834 @@
-{"topics":[
-{"id":"sva","title":"Subject-Verb Agreement","lesson":"Verb harus cocok dengan <b>subjek utama</b>, bukan kata yang dekat dengannya. <i>The <u>results</u> of the study <u>are</u> clear.</i> Ingat: <b>each, every, either, neither + of</b> → verb tunggal. <b>The number of</b> → tunggal, <b>a number of</b> → jamak.","trap":"Frasa 'of the ...' atau 'in the ...' di tengah kalimat sengaja dipasang untuk mengecoh. Coret dulu frasa itu, cari subjeknya."},
-{"id":"tense","title":"Tenses","lesson":"<b>Past perfect</b> (had + V3) untuk kejadian yang terjadi <i>lebih dulu</i> dari kejadian lampau lain. <b>Present perfect</b> (has/have + V3) dipakai dengan <i>since, for, already, yet</i>. <b>Past continuous</b> untuk aksi yang sedang berlangsung saat aksi lain memotong.","trap":"Kata kunci waktu (since, by the time, when) hampir selalu menentukan jawaban. Cari kata itu dulu."},
-{"id":"para","title":"Parallelism","lesson":"Item dalam daftar atau pasangan (and, or, but, not only...but also) harus berbentuk sama: semua V-ing, semua to-infinitive, semua kata dasar, atau semua kata benda.","trap":"Lihat item pertama di daftar, lalu samakan item terakhir dengannya. Jawaban yang 'terdengar enak' sering salah."},
-{"id":"cond","title":"Conditionals","lesson":"<b>Type 1</b>: If + present, will + V1. <b>Type 2</b>: If + <u>were</u>/V2, would + V1. <b>Type 3</b>: If + had + V3, would have + V3. Type 3 bisa diinversi: <i>Had I known, ...</i>","trap":"Pada Type 2, 'were' dipakai untuk semua subjek (If I were, If she were). 'Was' biasanya jebakan."}
-],"questions":[
-{"t":"sva","q":"The results of the experiment ____ surprising.","o":["is","are","was","has"],"a":1,"e":"Subjek utamanya <b>results</b> (jamak), bukan <i>experiment</i>. Jadi pakai <b>are</b>."},
-{"t":"sva","q":"Neither the teacher nor the students ____ ready.","o":["is","was","are","has been"],"a":2,"e":"Pada neither...nor, verb mengikuti subjek yang <b>terdekat</b>: <i>students</i> (jamak) → <b>are</b>."},
-{"t":"sva","q":"Each of the books ____ a different cover.","o":["have","are having","has","having"],"a":2,"e":"<b>Each of</b> + kata benda jamak tetap memakai verb tunggal: <b>has</b>."},
-{"t":"sva","q":"The number of students ____ increasing every year.","o":["are","is","were","have been"],"a":1,"e":"<b>The number of</b> = tunggal → <b>is</b>. (A number of = jamak.)"},
-{"t":"tense","q":"By the time we arrived, the movie ____.","o":["already started","had already started","has already started","will already start"],"a":1,"e":"<b>By the time</b> + past → kejadian sebelumnya memakai past perfect: <b>had already started</b>."},
-{"t":"tense","q":"She ____ in Jakarta since 2019.","o":["lives","lived","has lived","is living"],"a":2,"e":"<b>Since</b> + titik waktu → present perfect: <b>has lived</b>."},
-{"t":"tense","q":"I ____ TV when the phone rang.","o":["watched","was watching","have watched","watch"],"a":1,"e":"Aksi yang sedang berlangsung lalu dipotong aksi lain → past continuous: <b>was watching</b>."},
-{"t":"tense","q":"Tomorrow at this time, we ____ on the beach.","o":["lie","will be lying","have lain","lay"],"a":1,"e":"'Tomorrow at this time' = aksi berlangsung di masa depan → <b>will be lying</b>."},
-{"t":"para","q":"She enjoys swimming, hiking, and ____.","o":["to read","reading","read","reads"],"a":1,"e":"Item sebelumnya V-ing, jadi item terakhir juga V-ing: <b>reading</b>."},
-{"t":"para","q":"The job requires patience, creativity, and ____.","o":["being organized","organized","organization","to organize"],"a":2,"e":"Daftar kata benda (patience, creativity) → <b>organization</b>."},
-{"t":"para","q":"He is not only intelligent but also ____.","o":["works hard","hard-working","works hardly","work hard"],"a":1,"e":"<i>Not only intelligent</i> (adjektiva) → harus adjektiva juga: <b>hard-working</b>."},
-{"t":"para","q":"To succeed, you must study hard, sleep well, and ____ healthy food.","o":["eating","to eat","eat","ate"],"a":2,"e":"Setelah <i>must</i>, semua verb berbentuk dasar: study, sleep, <b>eat</b>."},
-{"t":"cond","q":"If I ____ rich, I would travel the world.","o":["am","was","were","will be"],"a":2,"e":"Type 2 (pengandaian) memakai <b>were</b> untuk semua subjek."},
-{"t":"cond","q":"If she had studied harder, she ____ the test.","o":["would pass","would have passed","will pass","passed"],"a":1,"e":"Type 3 (If + had V3) → <b>would have passed</b>."},
-{"t":"cond","q":"If it rains tomorrow, we ____ at home.","o":["stay","would stay","will stay","stayed"],"a":2,"e":"Type 1 (kemungkinan nyata) → If + present, <b>will</b> + V1."},
-{"t":"cond","q":"____ I known the answer, I would have told you.","o":["If","Had","Have","Would"],"a":1,"e":"Inversi Type 3: <b>Had</b> + subjek + V3 menggantikan 'If I had known'."}
-]}
+{
+"topics": [
+{
+"id": "sva",
+"title": "Subject-Verb Agreement",
+"lesson": "Verb harus cocok dengan <b>subjek utama</b>, bukan kata yang dekat dengannya. <i>The <u>results</u> of the study <u>are</u> clear.</i> Ingat: <b>each, every, either, neither + of</b> → verb tunggal. <b>The number of</b> → tunggal, <b>a number of</b> → jamak.",
+"trap": "Frasa 'of the ...' atau 'in the ...' di tengah kalimat sengaja dipasang untuk mengecoh. Coret dulu frasa itu, cari subjeknya."
+},
+{
+"id": "tense",
+"title": "Tenses",
+"lesson": "<b>Past perfect</b> (had + V3) untuk kejadian yang terjadi <i>lebih dulu</i> dari kejadian lampau lain. <b>Present perfect</b> (has/have + V3) dipakai dengan <i>since, for, already, yet</i>. <b>Past continuous</b> untuk aksi yang sedang berlangsung saat aksi lain memotong.",
+"trap": "Kata kunci waktu (since, by the time, when) hampir selalu menentukan jawaban. Cari kata itu dulu."
+},
+{
+"id": "para",
+"title": "Parallelism",
+"lesson": "Item dalam daftar atau pasangan (and, or, but, not only...but also) harus berbentuk sama: semua V-ing, semua to-infinitive, semua kata dasar, atau semua kata benda.",
+"trap": "Lihat item pertama di daftar, lalu samakan item terakhir dengannya. Jawaban yang 'terdengar enak' sering salah."
+},
+{
+"id": "cond",
+"title": "Conditionals",
+"lesson": "<b>Type 1</b>: If + present, will + V1. <b>Type 2</b>: If + <u>were</u>/V2, would + V1. <b>Type 3</b>: If + had + V3, would have + V3. Type 3 bisa diinversi: <i>Had I known, ...</i>",
+"trap": "Pada Type 2, 'were' dipakai untuk semua subjek (If I were, If she were). 'Was' biasanya jebakan."
+},
+{
+"id": "wf",
+"title": "Word Forms",
+"lesson": "Satu kata punya banyak bentuk. <b>Noun</b> muncul setelah a/the atau adjektiva (<i>success</i>). <b>Adjective</b> berada sebelum noun atau setelah be (<i>successful</i>). <b>Adverb</b> menerangkan verb atau adjektiva (<i>successfully</i>). Akhiran umum: -tion/-ment/-ness (noun), -ful/-ive/-ous (adjektiva), -ly (adverb). Adjektiva -ing = penyebab perasaan, -ed = yang merasakan.",
+"trap": "Tanyakan dulu: posisi kosong ini butuh jenis kata apa? Lihat kata di kiri dan kanannya."
+},
+{
+"id": "err",
+"title": "Find the Error",
+"lesson": "Pada soal Written Expression, satu bagian kalimat salah dan kamu harus menemukannya. Periksa berurutan: (1) subject-verb agreement, (2) tense, (3) bentuk kata, (4) preposisi, (5) tunggal/jamak, (6) paralelisme.",
+"trap": "Jangan tertipu bagian yang terdengar aneh. Periksa tiap bagian secara tata bahasa. Biasanya hanya ada satu kesalahan."
+}
+],
+"questions": [
+{
+"t": "sva",
+"q": "The results of the experiment ____ surprising.",
+"o": [
+"is",
+"are",
+"was",
+"has"
+],
+"a": 1,
+"e": "Subjek utamanya <b>results</b> (jamak), bukan <i>experiment</i>. Jadi pakai <b>are</b>."
+},
+{
+"t": "sva",
+"q": "Neither the teacher nor the students ____ ready.",
+"o": [
+"is",
+"was",
+"are",
+"has been"
+],
+"a": 2,
+"e": "Pada neither...nor, verb mengikuti subjek yang <b>terdekat</b>: <i>students</i> (jamak) → <b>are</b>."
+},
+{
+"t": "sva",
+"q": "Each of the books ____ a different cover.",
+"o": [
+"have",
+"are having",
+"has",
+"having"
+],
+"a": 2,
+"e": "<b>Each of</b> + kata benda jamak tetap memakai verb tunggal: <b>has</b>."
+},
+{
+"t": "sva",
+"q": "The number of students ____ increasing every year.",
+"o": [
+"are",
+"is",
+"were",
+"have been"
+],
+"a": 1,
+"e": "<b>The number of</b> = tunggal → <b>is</b>. (A number of = jamak.)"
+},
+{
+"t": "tense",
+"q": "By the time we arrived, the movie ____.",
+"o": [
+"already started",
+"had already started",
+"has already started",
+"will already start"
+],
+"a": 1,
+"e": "<b>By the time</b> + past → kejadian sebelumnya memakai past perfect: <b>had already started</b>."
+},
+{
+"t": "tense",
+"q": "She ____ in Jakarta since 2019.",
+"o": [
+"lives",
+"lived",
+"has lived",
+"is living"
+],
+"a": 2,
+"e": "<b>Since</b> + titik waktu → present perfect: <b>has lived</b>."
+},
+{
+"t": "tense",
+"q": "I ____ TV when the phone rang.",
+"o": [
+"watched",
+"was watching",
+"have watched",
+"watch"
+],
+"a": 1,
+"e": "Aksi yang sedang berlangsung lalu dipotong aksi lain → past continuous: <b>was watching</b>."
+},
+{
+"t": "tense",
+"q": "Tomorrow at this time, we ____ on the beach.",
+"o": [
+"lie",
+"will be lying",
+"have lain",
+"lay"
+],
+"a": 1,
+"e": "'Tomorrow at this time' = aksi berlangsung di masa depan → <b>will be lying</b>."
+},
+{
+"t": "para",
+"q": "She enjoys swimming, hiking, and ____.",
+"o": [
+"to read",
+"reading",
+"read",
+"reads"
+],
+"a": 1,
+"e": "Item sebelumnya V-ing, jadi item terakhir juga V-ing: <b>reading</b>."
+},
+{
+"t": "para",
+"q": "The job requires patience, creativity, and ____.",
+"o": [
+"being organized",
+"organized",
+"organization",
+"to organize"
+],
+"a": 2,
+"e": "Daftar kata benda (patience, creativity) → <b>organization</b>."
+},
+{
+"t": "para",
+"q": "He is not only intelligent but also ____.",
+"o": [
+"works hard",
+"hard-working",
+"works hardly",
+"work hard"
+],
+"a": 1,
+"e": "<i>Not only intelligent</i> (adjektiva) → harus adjektiva juga: <b>hard-working</b>."
+},
+{
+"t": "para",
+"q": "To succeed, you must study hard, sleep well, and ____ healthy food.",
+"o": [
+"eating",
+"to eat",
+"eat",
+"ate"
+],
+"a": 2,
+"e": "Setelah <i>must</i>, semua verb berbentuk dasar: study, sleep, <b>eat</b>."
+},
+{
+"t": "cond",
+"q": "If I ____ rich, I would travel the world.",
+"o": [
+"am",
+"was",
+"were",
+"will be"
+],
+"a": 2,
+"e": "Type 2 (pengandaian) memakai <b>were</b> untuk semua subjek."
+},
+{
+"t": "cond",
+"q": "If she had studied harder, she ____ the test.",
+"o": [
+"would pass",
+"would have passed",
+"will pass",
+"passed"
+],
+"a": 1,
+"e": "Type 3 (If + had V3) → <b>would have passed</b>."
+},
+{
+"t": "cond",
+"q": "If it rains tomorrow, we ____ at home.",
+"o": [
+"stay",
+"would stay",
+"will stay",
+"stayed"
+],
+"a": 2,
+"e": "Type 1 (kemungkinan nyata) → If + present, <b>will</b> + V1."
+},
+{
+"t": "cond",
+"q": "____ I known the answer, I would have told you.",
+"o": [
+"If",
+"Had",
+"Have",
+"Would"
+],
+"a": 1,
+"e": "Inversi Type 3: <b>Had</b> + subjek + V3 menggantikan 'If I had known'."
+},
+{
+"t": "sva",
+"q": "The teacher, along with her students, ____ going to the museum.",
+"o": [
+"are",
+"is",
+"were",
+"have"
+],
+"a": 1,
+"e": "<b>Along with</b> tidak mengubah subjek. Subjeknya <i>teacher</i> (tunggal) → <b>is</b>."
+},
+{
+"t": "sva",
+"q": "Mathematics ____ my favorite subject.",
+"o": [
+"are",
+"is",
+"were",
+"have been"
+],
+"a": 1,
+"e": "Nama pelajaran berakhiran -s (mathematics, physics, economics) dianggap tunggal → <b>is</b>."
+},
+{
+"t": "sva",
+"q": "There ____ several reasons for the delay.",
+"o": [
+"is",
+"was",
+"are",
+"has"
+],
+"a": 2,
+"e": "Setelah <b>there</b>, verb mengikuti kata benda sesudahnya: <i>reasons</i> (jamak) → <b>are</b>."
+},
+{
+"t": "sva",
+"q": "A number of students ____ absent today.",
+"o": [
+"is",
+"was",
+"are",
+"has been"
+],
+"a": 2,
+"e": "<b>A number of</b> + jamak = jamak → <b>are</b>. (The number of = tunggal.)"
+},
+{
+"t": "sva",
+"q": "The news about the earthquakes ____ shocking.",
+"o": [
+"were",
+"are",
+"was",
+"have been"
+],
+"a": 2,
+"e": "<b>News</b> adalah kata benda tak terhitung (tunggal) walau berakhiran -s → <b>was</b>."
+},
+{
+"t": "sva",
+"q": "Everyone in the room ____ waiting for the announcement.",
+"o": [
+"are",
+"were",
+"is",
+"have been"
+],
+"a": 2,
+"e": "<b>Everyone, everybody, someone, anyone</b> selalu tunggal → <b>is</b>."
+},
+{
+"t": "sva",
+"q": "Physics and chemistry ____ required for this major.",
+"o": [
+"is",
+"are",
+"was",
+"has been"
+],
+"a": 1,
+"e": "Dua subjek yang dihubungkan <b>and</b> menjadi jamak → <b>are</b>."
+},
+{
+"t": "tense",
+"q": "Water ____ at 100 degrees Celsius.",
+"o": [
+"boiled",
+"boils",
+"is boiling",
+"has boiled"
+],
+"a": 1,
+"e": "Fakta ilmiah memakai simple present → <b>boils</b>."
+},
+{
+"t": "tense",
+"q": "We ____ to the beach last weekend.",
+"o": [
+"go",
+"have gone",
+"went",
+"had gone"
+],
+"a": 2,
+"e": "<b>Last weekend</b> = waktu lampau yang jelas → simple past: <b>went</b>."
+},
+{
+"t": "tense",
+"q": "He has lived in Pekanbaru ____ ten years.",
+"o": [
+"since",
+"for",
+"during",
+"from"
+],
+"a": 1,
+"e": "<b>For</b> + lama waktu (ten years). <b>Since</b> + titik awal (since 2016)."
+},
+{
+"t": "tense",
+"q": "I ____ him yet.",
+"o": [
+"didn't see",
+"don't see",
+"haven't seen",
+"hadn't seen"
+],
+"a": 2,
+"e": "<b>Yet</b> dipakai dengan present perfect → <b>haven't seen</b>."
+},
+{
+"t": "tense",
+"q": "Right now, the students ____ an exam.",
+"o": [
+"take",
+"took",
+"are taking",
+"have taken"
+],
+"a": 2,
+"e": "<b>Right now</b> = sedang berlangsung → present continuous: <b>are taking</b>."
+},
+{
+"t": "tense",
+"q": "After she ____ the report, she sent it to her boss.",
+"o": [
+"finishes",
+"had finished",
+"will finish",
+"is finishing"
+],
+"a": 1,
+"e": "Kejadian yang selesai lebih dulu dari aksi lampau lain → past perfect: <b>had finished</b>."
+},
+{
+"t": "tense",
+"q": "By next year, I ____ my degree.",
+"o": [
+"finish",
+"finished",
+"will have finished",
+"am finishing"
+],
+"a": 2,
+"e": "<b>By + waktu masa depan</b> → future perfect: <b>will have finished</b>."
+},
+{
+"t": "para",
+"q": "The manager is responsible for hiring staff, ____ budgets, and planning events.",
+"o": [
+"manage",
+"managing",
+"to manage",
+"managed"
+],
+"a": 1,
+"e": "Setelah preposisi <i>for</i>, daftar memakai V-ing: hiring, <b>managing</b>, planning."
+},
+{
+"t": "para",
+"q": "Students must submit the form, pay the fee, and ____ an interview.",
+"o": [
+"attending",
+"attend",
+"attended",
+"attendance"
+],
+"a": 1,
+"e": "Setelah <i>must</i>, semua verb berbentuk dasar: submit, pay, <b>attend</b>."
+},
+{
+"t": "para",
+"q": "The book was both informative and ____.",
+"o": [
+"entertained",
+"entertainment",
+"entertaining",
+"entertain"
+],
+"a": 2,
+"e": "Pasangan <i>both...and</i> harus sejenis. <i>Informative</i> adjektiva → <b>entertaining</b>."
+},
+{
+"t": "para",
+"q": "Their goals are to reduce costs, increase profits, and ____ customer satisfaction.",
+"o": [
+"improving",
+"improve",
+"improved",
+"to improving"
+],
+"a": 1,
+"e": "Daftar berpola to + V1 (to reduce, increase, <b>(to) improve</b>)."
+},
+{
+"t": "para",
+"q": "The professor was kind, patient, and ____.",
+"o": [
+"helped",
+"helpfully",
+"helpful",
+"help"
+],
+"a": 2,
+"e": "Daftar adjektiva (kind, patient) → <b>helpful</b>."
+},
+{
+"t": "para",
+"q": "He would rather stay home than ____ to the party.",
+"o": [
+"go",
+"going",
+"to go",
+"went"
+],
+"a": 0,
+"e": "Pola <i>would rather + V1 than + V1</i> → <b>go</b>."
+},
+{
+"t": "para",
+"q": "Walking is as healthy as ____.",
+"o": [
+"to swim",
+"swim",
+"swimming",
+"swam"
+],
+"a": 2,
+"e": "Dua hal yang dibandingkan harus sejajar: <i>walking</i> dan <b>swimming</b>."
+},
+{
+"t": "cond",
+"q": "If I ____ you, I would apologize.",
+"o": [
+"am",
+"was",
+"were",
+"will be"
+],
+"a": 2,
+"e": "Pengandaian (Type 2) memakai <b>were</b> untuk semua subjek."
+},
+{
+"t": "cond",
+"q": "If water reaches 100°C, it ____.",
+"o": [
+"will boil",
+"would boil",
+"boils",
+"boiled"
+],
+"a": 2,
+"e": "Fakta ilmiah (zero conditional): If + present, <b>present</b> → boils."
+},
+{
+"t": "cond",
+"q": "If he ____ earlier, he would have caught the train.",
+"o": [
+"left",
+"leaves",
+"had left",
+"would leave"
+],
+"a": 2,
+"e": "Type 3: If + <b>had + V3</b>, would have + V3."
+},
+{
+"t": "cond",
+"q": "I would buy a car if I ____ enough money.",
+"o": [
+"have",
+"had",
+"will have",
+"would have"
+],
+"a": 1,
+"e": "Type 2: If + <b>past</b>, would + V1."
+},
+{
+"t": "cond",
+"q": "Unless you ____ hard, you will fail the exam.",
+"o": [
+"don't study",
+"study",
+"won't study",
+"studied"
+],
+"a": 1,
+"e": "<b>Unless</b> = if not, jadi verbnya positif: <b>study</b>."
+},
+{
+"t": "cond",
+"q": "If she ____ the lottery, she would quit her job.",
+"o": [
+"wins",
+"won",
+"had won",
+"will win"
+],
+"a": 1,
+"e": "Type 2 (pengandaian): If + <b>past</b>, would + V1."
+},
+{
+"t": "cond",
+"q": "If they had left earlier, they ____ the flight.",
+"o": [
+"would miss",
+"wouldn't have missed",
+"won't miss",
+"didn't miss"
+],
+"a": 1,
+"e": "Type 3: If + had V3, <b>would(n't) have + V3</b>."
+},
+{
+"t": "wf",
+"q": "She gave a very ____ presentation.",
+"o": [
+"impress",
+"impressive",
+"impressively",
+"impression"
+],
+"a": 1,
+"e": "Sebelum noun (presentation) dibutuhkan adjektiva → <b>impressive</b>."
+},
+{
+"t": "wf",
+"q": "The company grew ____ last year.",
+"o": [
+"rapid",
+"rapidly",
+"rapidity",
+"rapids"
+],
+"a": 1,
+"e": "Menerangkan verb (grew) → adverb <b>rapidly</b>."
+},
+{
+"t": "wf",
+"q": "The ____ of the project surprised everyone.",
+"o": [
+"succeed",
+"successful",
+"success",
+"successfully"
+],
+"a": 2,
+"e": "Setelah <i>the</i> dan sebagai subjek → noun <b>success</b>."
+},
+{
+"t": "wf",
+"q": "He answered the questions ____.",
+"o": [
+"careful",
+"carefully",
+"care",
+"caring"
+],
+"a": 1,
+"e": "Menerangkan cara menjawab → adverb <b>carefully</b>."
+},
+{
+"t": "wf",
+"q": "We need to ____ the problem before it gets worse.",
+"o": [
+"solution",
+"solve",
+"solvable",
+"solving"
+],
+"a": 1,
+"e": "Setelah <i>need to</i> dibutuhkan verb dasar → <b>solve</b>."
+},
+{
+"t": "wf",
+"q": "She is very ____ about environmental issues.",
+"o": [
+"concern",
+"concerned",
+"concerning",
+"concernedly"
+],
+"a": 1,
+"e": "Setelah be + very dibutuhkan adjektiva. 'Merasa peduli' → <b>concerned</b>."
+},
+{
+"t": "wf",
+"q": "Their ____ helped the team finish early.",
+"o": [
+"cooperate",
+"cooperative",
+"cooperation",
+"cooperatively"
+],
+"a": 2,
+"e": "Setelah <i>their</i> dibutuhkan noun → <b>cooperation</b>."
+},
+{
+"t": "wf",
+"q": "It is ____ to finish the work in one day.",
+"o": [
+"possible",
+"possibility",
+"possibly",
+"possibilities"
+],
+"a": 0,
+"e": "Setelah <i>It is</i> dibutuhkan adjektiva → <b>possible</b>."
+},
+{
+"t": "wf",
+"q": "The ____ news made everyone happy.",
+"o": [
+"excite",
+"exciting",
+"excitement",
+"excitedly"
+],
+"a": 1,
+"e": "News menyebabkan rasa senang → adjektiva -ing: <b>exciting</b>."
+},
+{
+"t": "wf",
+"q": "He was ____ by the test results.",
+"o": [
+"disappoint",
+"disappointing",
+"disappointed",
+"disappointment"
+],
+"a": 2,
+"e": "Orangnya yang merasakan → adjektiva -ed: <b>disappointed</b>."
+},
+{
+"t": "wf",
+"q": "Please read the ____ carefully before you sign.",
+"o": [
+"instruct",
+"instructions",
+"instructive",
+"instructively"
+],
+"a": 1,
+"e": "Setelah <i>the</i>, dan objek dari read → noun <b>instructions</b>."
+},
+{
+"t": "err",
+"q": "Identify the error: The number of students in the class are increasing.",
+"o": [
+"number",
+"students",
+"class",
+"are"
+],
+"a": 3,
+"e": "<b>The number of</b> = tunggal, jadi <b>are</b> harus <b>is</b>."
+},
+{
+"t": "err",
+"q": "Identify the error: She don't like to eat vegetables.",
+"o": [
+"She",
+"don't",
+"to eat",
+"vegetables"
+],
+"a": 1,
+"e": "Subjek <i>she</i> tunggal → <b>doesn't</b>."
+},
+{
+"t": "err",
+"q": "Identify the error: He has been working here since five years.",
+"o": [
+"has been",
+"working",
+"here",
+"since"
+],
+"a": 3,
+"e": "Lama waktu memakai <b>for</b>, bukan since."
+},
+{
+"t": "err",
+"q": "Identify the error: Neither of the answers are correct.",
+"o": [
+"Neither",
+"of the",
+"answers",
+"are"
+],
+"a": 3,
+"e": "<b>Neither of</b> + jamak → verb tunggal: <b>is</b>."
+},
+{
+"t": "err",
+"q": "Identify the error: The information in this report are very useful.",
+"o": [
+"information",
+"in",
+"report",
+"are"
+],
+"a": 3,
+"e": "<b>Information</b> tak terhitung (tunggal) → <b>is</b>."
+},
+{
+"t": "err",
+"q": "Identify the error: I look forward to see you next week.",
+"o": [
+"look",
+"forward",
+"to see",
+"next week"
+],
+"a": 2,
+"e": "<i>Look forward to</i> diikuti V-ing → <b>to seeing</b>."
+},
+{
+"t": "err",
+"q": "Identify the error: The students was given more time to finish the test.",
+"o": [
+"students",
+"was given",
+"more time",
+"to finish"
+],
+"a": 1,
+"e": "Subjek jamak → <b>were given</b>."
+},
+{
+"t": "err",
+"q": "Identify the error: Despite of the rain, we continued the game.",
+"o": [
+"Despite of",
+"the rain",
+"continued",
+"the game"
+],
+"a": 0,
+"e": "Yang benar <b>despite</b> (tanpa of) atau <i>in spite of</i>."
+},
+{
+"t": "err",
+"q": "Identify the error: She is more taller than her brother.",
+"o": [
+"is",
+"more taller",
+"than",
+"brother"
+],
+"a": 1,
+"e": "Adjektiva pendek tidak memakai more → <b>taller</b>."
+},
+{
+"t": "err",
+"q": "Identify the error: If he will come, we will start the meeting.",
+"o": [
+"If",
+"he will come",
+"we will start",
+"the meeting"
+],
+"a": 1,
+"e": "Setelah <i>if</i> (Type 1) pakai present: <b>he comes</b>."
+},
+{
+"t": "err",
+"q": "Identify the error: He is one of the best player in the team.",
+"o": [
+"is",
+"one of",
+"best player",
+"in the team"
+],
+"a": 2,
+"e": "<b>One of the</b> + noun jamak → <b>best players</b>."
+}
+]
+}
